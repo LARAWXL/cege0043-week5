@@ -90,6 +90,8 @@
 
 
 <body>
+
+
 <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
     <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
         <div class="mdl-layout__header-row">
@@ -148,11 +150,12 @@
                     class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Get
                 Earthquakes</a>
 
+            <a class="mdl-navigation__link" href="" onclick=’callDivNodeJSChange();return false;’><i
+                    class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Change Div Content</a>
+
 
             <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons"
                                                        role="presentation">report</i>Spam</a>
-            <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons"
-                                                       role="presentation">forum</i>Forums</a>
             <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons"
                                                        role="presentation">flag</i>Updates</a>
             <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons"
@@ -167,17 +170,19 @@
         </nav>
     </div>
 
-    <!-- create a DIV called ucllogo -->
+    <!-- create some DIV in the main section of the webpage -->
     <main class="mdl-layout__content mdl-color--grey-100">
+        <!-- create a DIV called ucllogo -->
         <div class="mdl-grid demo-content">
             <div class="demo-separator mdl-cell--1-col"></div>
             <div id="ucllogo" name="ucllogo"></div>
         </div>
-    </main>
 
-    <!-- create a DIV to hold the map -->
-    <main class="mdl-layout__content mdl-color--grey-100">
+        <!-- create a DIV to hold the map -->
         <div id="mapid" style="width: 600px; height: 400px;"></div>
+
+        <!-- create a DIV to for ajax test -->
+        <div id="ajaxtest" style="width: 1600px; height: 20px;"></div>
     </main>
 
 </div>
