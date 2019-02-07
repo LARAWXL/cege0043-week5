@@ -1,0 +1,9 @@
+[submodule "uceslxw/www/images"]
+	path = uceslxw/www/images
+	url = https://github.com/LARAWXL/cege0043-imagesReference.git
+[submodule "uceslxw/www/css"]
+	path = uceslxw/www/css
+	url = https://github.com/LARAWXL/cege0043-cssReference.git
+[submodule "uceslxw/www/js"]
+	path = uceslxw/www/js
+	url = https://github.com/LARAWXL/cege0043-jsReference.git
