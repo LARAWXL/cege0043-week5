@@ -1,0 +1,7 @@
+git rm --cached js
+git rm --cached css
+git rm --cached images
+
+git submodule add https://github.com/LARAWXL/cege0043-jsReference.git js
+git submodule add https://github.com/LARAWXL/cege0043-cssReference.git css
+git submodule add https://github.com/LARAWXL/cege0043-imagesReference.git images
