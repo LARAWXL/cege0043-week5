@@ -57,7 +57,7 @@
             bottom: 0;
             margin-right: 40px;
             margin-bottom: 40px;
-            z-index: 900;
+            z-index: 2900;
         }
     </style>
 
@@ -137,6 +137,8 @@
                 </ul>
             </div>
         </header>
+
+
         <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
 
             <a class="mdl-navigation__link" href="" onclick='addPointLinePoly();return false;'><i
@@ -176,26 +178,23 @@
         </div>
     </main>
 
-    <!-- create a DIV to hold the map -->
-    <main class="mdl-layout__content mdl-color--grey-100">
-        <div id="mapid" style="width: 600px; height: 400px;"></div>
-    </main>
 
-    <!-- create a DIV for ajax test using server-->
+
     <main class="mdl-layout__content mdl-color--grey-100">
-        <h8>Change DIV content using AJAX</h8>
-        <div id="ajaxtest" style="width: 1600px; height: 20px;"></div>
+        <!-- create a DIV to hold the map -->
+        <div id="mapid" style="width: 600px; height: 400px;"></div>
+        <!-- create a DIV for ajax test using server-->
+        <h5>Change DIV content using AJAX</h5>
+        <div id="ajaxtest" style="width: 600px; height: 20px;"></div>
         <!-- reference following HTML -->
         <div w3-include-html="createForm.html"></div>
-    </main>
-
-    <!-- create a DIV for ajax test using local files-->
-    <main class="mdl-layout__content mdl-color--grey-100">
-        <p>Type the html file name here - note you need to include .html</p>
+        <!-- create a DIV for ajax test using local files-->
+        <h5>Type the html file name here - note you need to include .html</h5>
         <input type="text" name="filename" id="filename" size=50>
-        <div id="div1" style="width: 1600px; height: 200px;">This is the unchanged div content</div>
+        <div id="div1" style="width: 600px; height: 20px;">This is the unchanged div content</div>
         <button id="button1" onclick="callDivChange()">Click me to change the DIV content</button>
     </main>
+
 
 </div>
 
@@ -213,7 +212,6 @@
 <script src="js/uploadData.js"></script>
 <script src="js/load_formdata.js"></script>
 <script src="js/load_getGeoJSON.js"></script>
-
 
 
 <!-- automatically load the point/line/circle and
